@@ -1,0 +1,35 @@
+{
+  "name": "cursor-ripple-effect",
+  "version": "0.0.1-beta.3",
+  "description": "Create ripple effect when clicked any where on browser window",
+  "main": "build/index.umd.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "types": "build/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ahmetilhn/cursor-ripple-effect.git"
+  },
+  "scripts": {
+    "build": "sh ./scripts/prod-build.sh",
+    "dev": "sh ./scripts/dev-build.sh"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.30.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.8.1"
+  },
+  "author": "Ahmet ilhan <ahmetilhan.dev@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "memofy": "1.0.6",
+    "amigo-js": "3.0.0"
+  }
+}
