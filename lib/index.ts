@@ -26,10 +26,6 @@ class CursorRippleEffect {
   static listenClickEvent = (): void => {
     document.addEventListener("click", this.handleClick);
   };
-
-  static removeClickEvent = () => {
-    document.removeEventListener("click", this.handleClick);
-  };
 }
 
 export default CursorRippleEffect;
