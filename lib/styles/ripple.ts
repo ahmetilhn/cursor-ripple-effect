@@ -1,33 +1,22 @@
 import { memoize } from "memofy";
-import { ANIMATION_VALUE } from "../constants/common.constants";
 import CreateStyleObjParams from "../types/create-style-obj-params.type";
-
-export const injectAnimationStyle = () => {
-  const styleSheet = document.createElement("style");
-  styleSheet.innerHTML = `@keyframes cursorRippleAnimation {
-   to {
-      width: 0px;
-      height: 0px;
-   }
-  }`;
-  document.body.appendChild(styleSheet);
-};
 
 export const createStyleObj = memoize<Record<string, string | number>>(
   ({
     left,
     top,
     isDarkTheme,
+    duration,
   }: CreateStyleObjParams): Record<string, string | number> => {
     return {
       position: "absolute",
       zIndex: 99999999,
       backgroundColor: isDarkTheme ? "#fff" : "#000",
-      opacity: 0.2,
-      width: "32px",
-      height: "32px",
+      opacity: 0,
+      width: "42px",
+      height: "42px",
       borderRadius: "50%",
-      animation: ANIMATION_VALUE,
+      animation: `cursorRippleAnimation ${duration / 1000}s ease-in forwards`,
       left: left + "px",
       top: top + "px",
       transform: "translate(-50%, -50%)",

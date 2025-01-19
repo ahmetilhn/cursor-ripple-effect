@@ -1,6 +1,6 @@
 {
   "name": "cursor-ripple-effect",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1",
   "description": "Create ripple effect when clicked any where on browser window",
   "main": "build/index.umd.js",
   "directories": {
