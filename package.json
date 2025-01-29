@@ -1,6 +1,6 @@
 {
   "name": "cursor-ripple-effect",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create ripple effect when clicked any where on browser window",
   "main": "build/index.umd.js",
   "directories": {
@@ -29,7 +29,7 @@
   "author": "Ahmet ilhan <ahmetilhan.dev@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "memofy": "1.0.6",
-    "amigo-js": "3.0.0"
+    "amigo-js": "3.0.0",
+    "memofy": "1.0.7"
   }
 }

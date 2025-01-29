@@ -1,7 +1,7 @@
 import { memoize } from "memofy";
 import CreateStyleObjParams from "../types/create-style-obj-params.type";
 
-export const createStyleObj = memoize<Record<string, string | number>>(
+export const createStyleObj = memoize(
   ({
     left,
     top,
